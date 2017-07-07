@@ -1,0 +1,17 @@
+{
+    "family": "profile",
+    "containerDefinitions": [
+        {
+            "name": "profile",
+            "image": "imageUrl",
+            "cpu": 400,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080
+                }
+            ],
+            "essential": true
+          }]
+}
