@@ -2,4 +2,5 @@ FROM frolvlad/alpine-oraclejdk8:slim
 ENV version=0.0.1-SNAPSHOT
 RUN apk update && apk upgrade && apk add git
 ADD *.jar springboot-${version}.jar
+RUN sh -c "touch /springboot-${version}.jar"
 CMD ["java","-jar","/springboot-${version}.jar"]
