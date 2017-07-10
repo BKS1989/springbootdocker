@@ -4,5 +4,4 @@ RUN apk update && apk upgrade && apk add git
 ADD *.jar springboot-${version}.jar
 RUN "chmod a+rx /springboot-${version}.jar"
 RUN sh -c "touch /springboot-${version}.jar"
-
 CMD ["java","-jar","/springboot-${version}.jar"]
